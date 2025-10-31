@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percursos Digitais</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="container-menu" aria-label="Navegação principal">
+  <img src="./img/marca.png" alt="marca" width="178" height="72">
+
+  <ul class="menu" role="menubar">
+    <li role="none"><a role="menuitem" href="#home">Home</a></li>
+
+    <!-- dropdown -->
+    <li class="dropdown" role="none">
+      <!-- usamos <button> para ser acessível e permitir toggle por click/teclado -->
+      <button class="dropbtn" aria-expanded="false" aria-controls="submenu-portfolio">
+        Portfólio ▾
+      </button>
+
+      <ul id="submenu-portfolio" class="submenu" role="menu" aria-hidden="true">
+        <li role="none"><a role="menuitem" href="#landing-pages">Landing Pages</a></li>
+        <li role="none"><a role="menuitem" href="#cartoes">Cartões de Visita</a></li>
+        <li role="none"><a role="menuitem" href="#conteudo">Conteúdos Estratégicos</a></li>
+        <li role="none"><a role="menuitem" href="#case">Case de Sucesso</a></li>
+      </ul>
+    </li>
+
+    <li role="none"><a role="menuitem" href="#contato">Contato</a></li>
+  </ul>
+</nav>
+
+  <header class="container-header">
+    <div class="p-header">
+      <h1>Quer atrair e pescar clientes?</h1>
+      <p>Mais de 150 milhões de brasileiros estão online no mar digital, todos os dias! Você só precisa de um percurso para atrair e pescar o público certo e o transformar em clientes. </p>
+        <h2>A Percursos Digitais te ajuda com:</h2>
+        <ul class="list">
+          <li>Estratégia de Marketing Digital</li>
+          <li>Cartões de Visita Digitais</li>
+          <li>Landing Pages de alta conversão</li>
+          <li>Conteúdos para Instagram e LinkedIn</li>
+        </ul>
+     <a href="#" class="btn">Quero pescar mais clientes</a>
+    </div>
+    <div>
+      <img src="./img/img-pesca.png" alt="img-pesca">
+    </div>
+  </header>
+
+  <section class="container-servicos">
+    <div class="subtitulo-paragrafo">
+      <h2>Muito além do Percurso</h2>
+      <p>Ao criar um Percurso Digial para a sua empresa, você terá materiais de atração, alto engajamento e conversão, feitos, de forma personalizada de acordo com sua marca e o seu público. </p>
+    </div>
+    <div class="container-produtos">
+      <div class="produto">
+        <h3>Cartões de Visita Digitais</h3>
+        <img src="./img/cartao.png" alt="cartao" width="325" height="302">
+        <p class="txt">Personalizados, interativos e fáceis de compartilhar: um cartão moderno que gera conexão imediata.</p>
+        <a href="#" class="btn-secundario">Ver o portfólio completo</a>
+      </div>
+
+       <div class="produto">
+        <h3>Landing Pages</h3>
+        <img src="./img/lps.png" alt="landing-pages" width="325" height="302">
+        <p class="txt">Landing Pages ultrarrápidas, leves e responsivas de alta conversão. Perfeitas para divulgar um serviço, evento ou produto digital.</p>
+        <a href="#" class="btn-secundario">Ver o portfólio completo</a>
+      </div>
+
+       <div class="produto">
+        <h3>Conteúdos Estratégicos</h3>
+        <img src="./img/content.png" alt="conteudo" width="325" height="302">
+        <p class="txt">Conteúdos estratégicos para Instagram e LinkedIn, pensados para todas as etapas do funil de vendas.</p>
+        <a href="#" class="btn-secundario">Ver o case de sucesso</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+      <div class="subtitulo-paragrafo">
+      <h2>Processo Percursos Digitais</h2>
+      <p>Cada projeto é uma jornada. O Processo Percursos Digitais garante que tudo seja feito com clareza, propósito e foco em resultado - do primeiro contato até a entrega.</p>
+    </div>
+
+    <div class="container-processos">
+      <div class="processos">
+        <div>
+          <div class="processo-lista">
+            <h2><b class="bg-numb">1.</b> Conversa estratégica:</h2>
+            <p>Entendo seus objetivos e os percursos digitais do seu negócio.</p>
+          </div>
+           <div class="processo-lista">
+            <h2><b class="bg-numb">3.</b> Desenvolvimento:</h2>
+            <p>Criação visual e estratégica focada em conversão.</p>
+           </div>
+           <div class="processo-lista">
+            <h2><b class="bg-numb">5.</b>Codificação e Entrega:</h2>
+            <p>Tudo pronto para uso, com performance e propósito.</p>
+           </div>
+          </div>
+      </div>
+
+      <div>
+        <div>
+          <div class="processo-lista">
+            <h2><b class="bg-numb">2.</b>Pesquisa Inicial:</h2>
+            <p>Analiso público, concorrência e posicionamento.</p>
+          </div>
+            <div class="processo-lista">
+            <h2><b class="bg-numb">4.</b>Apresentação e Refinamento:</h2>
+            <p>Ajustamos juntos cada detalhe.</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <cite class="cite">
+    <h3>Construindo percursos que convertem.</h3>
+  </cite>
+
+  <footer class="footer">
+    <p>Desenvolvido por Percursos Digitais - 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
