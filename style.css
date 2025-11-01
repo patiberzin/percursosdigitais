@@ -102,12 +102,27 @@
 }
 
 .list {
-  border: 3px solid var(--cor-btn-principal);
-  border-radius: 10px;
-  padding: 20px 40px;
+  padding: 20px 15px;
   margin-bottom: 24px;
-  list-style-type: disc;
 }
+
+.list li {
+  position: relative;
+  padding-left: 20px;  /* Espaço para o ponto */
+}
+
+.list li::before {
+  content: '';
+  position: absolute;
+  top: 50%;        /* Centraliza verticalmente */
+  left: 0;         /* Alinha à esquerda */
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: #fd8a59;
+  border-radius: 50%;
+}
+
 
 /*SERVIÇOS*/
 
