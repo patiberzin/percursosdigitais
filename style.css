@@ -165,8 +165,9 @@ body {
 /*SERVIÇOS*/
 
 .container-servicos {
-  background-color: var(--cor-fundo-destaque);
+  background: linear-gradient(to bottom, #00aaff, #001f3f);
   padding: 120px 0;
+  color: #fff;
 }
 
 .subtitulo-paragrafo {
@@ -179,7 +180,7 @@ body {
 .subtitulo-paragrafo h2 {
   font-family: "Ubuntu", sans-serif;
    font-size: 2em;
-   color: var(--cor-btn-principal);
+  color: #fff;
 }
 
 .subtitulo-paragrafo p {
@@ -201,9 +202,15 @@ body {
 .produto h3 {
    font-family: "Inter", sans-serif;
    font-size: 1.2em;
-   color: var(--cor-btn-principal);
+   color: #fff;
   font-weight: bold;
   margin: 16px auto;
+}
+
+.item {
+  border: 3px solid var(--cor-btn-principal);
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .txt {
