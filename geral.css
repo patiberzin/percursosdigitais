@@ -36,6 +36,20 @@ body {
   background: linear-gradient(to right, #E36630, #E4C12C);
 }
 
+.link {
+  display: inline-block;
+  border-bottom: 3px solid #0D2B67;
+  color: #0D2B67;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-bottom: 2px;
+}
+
+.link:hover {
+  border-bottom: 3px solid var(--cor-titulo);
+  color: var(--cor-titulo);
+}
+
 :root {
   --cor-titulo: #10618E;
   --cor-btn-principal: #0D2B67;
