@@ -180,7 +180,7 @@ body {
 .subtitulo-paragrafo h2 {
   font-family: "Ubuntu", sans-serif;
    font-size: 2em;
-  color: #fff;
+  color: var(--cor-btn-principal);
 }
 
 .subtitulo-paragrafo p {
