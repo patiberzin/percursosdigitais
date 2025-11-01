@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="geral.css">
+  <link rel="stylesheet" href="contato.css">
+  <link rel="stylesheet" href="lp.css">
+</head>
+<body>
+    <nav class="container-menu" aria-label="Navegação principal">
+  <img src="./img/marca.png" alt="marca" width="178" height="72">
+
+  <ul class="menu" role="menubar">
+    <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+
+    <!-- dropdown -->
+    <li class="dropdown" role="none">
+      <!-- usamos <button> para ser acessível e permitir toggle por click/teclado -->
+      <button class="dropbtn" aria-expanded="false" aria-controls="submenu-portfolio">
+        Portfólio ▾
+      </button>
+
+      <ul id="submenu-portfolio" class="submenu" role="menu" aria-hidden="true">
+        <li role="none"><a role="menuitem" href="lp.html">Landing Pages</a></li>
+        <li role="none"><a role="menuitem" href="#cartoes">Cartões de Visita</a></li>
+        <li role="none"><a role="menuitem" href="#conteudo">Conteúdos Estratégicos</a></li>
+        <li role="none"><a role="menuitem" href="#case">Case de Sucesso</a></li>
+      </ul>
+    </li>
+
+    <li role="none"><a role="menuitem" href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+</body>
+</html>
