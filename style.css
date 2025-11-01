@@ -15,7 +15,7 @@ body {
   padding: 16px 40px;
   background-color: var(--cor-btn-principal); 
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1.2em;
   border-radius: 10px;
 }
 
@@ -120,11 +120,6 @@ body {
 
   .dropdown.open .dropbtn { font-weight: 600; }
 
-  @media (max-width: 768px) {
-    .container-menu { flex-wrap: wrap; }
-    .menu { gap: 8px; }
-  }
-
 /*HEADER*/
 
 .container-header {
@@ -204,7 +199,7 @@ body {
 .produto h3 {
    font-family: "Inter", sans-serif;
    font-size: 1.2em;
-   color: var(--cor-btn-principal);
+   color: var();
   font-weight: bold;
   margin: 16px auto;
 }
@@ -266,3 +261,85 @@ body {
   text-align: center;
   padding: 30px;
 }
+
+/*RESPONSIVO*/
+  
+  @media (max-width: 1040px) {
+      .container-servicos,
+     .subtitulo-paragrafo,
+     .container-produtos,
+     .container-processos {
+      display: flex;
+      flex-direction: column;
+     }
+     .txt {
+      margin: auto 500px;
+     }
+  }
+
+  @media (max-width: 1200px) {
+    .container-servicos,
+     .subtitulo-paragrafo,
+     .container-produtos,
+     .container-processos {
+      display: flex;
+      flex-direction: column;
+     }
+    .txt {
+      margin: 32px 60px;
+     }
+  }
+
+     @media (max-width: 840px) {
+     .container-servicos,
+     .subtitulo-paragrafo,
+     .container-produtos,
+     .container-processos {
+      display: flex;
+      flex-direction: column;
+     }
+
+     }
+
+   @media (max-width: 789px) {
+    .container-menu { flex-wrap: wrap; }
+    .menu { gap: 8px; }
+    .container-header { 
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 20px;
+     }
+    .p-header h1,
+    .subtitulo-paragrafo h2 { 
+      font-size: 1.5em; 
+      margin-left: 24px;
+    }
+    .processo-lista h2 {
+      font-size: 1em;
+    }
+    .img-pesca { 
+      width: 200px;
+      height: 200px;
+      margin-top: 60px;
+     }
+     .container-servicos,
+     .subtitulo-paragrafo,
+     .container-produtos,
+     .container-processos {
+      display: flex;
+      flex-direction: column;
+     }p
+     .txt {
+      padding: 0 50px;
+     }
+     .btn-secundario {
+      padding: 16px 32px;
+     }
+     .produto h3 {
+      color: #000;
+     }
+     .produto img {
+      margin-top: 20px;
+     }
+  }
