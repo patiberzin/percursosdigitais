@@ -1,0 +1,80 @@
+/* Container principal */
+.slider {
+  width: 400px;
+  height: 900px; /* 796px imagem + espaço descrição/link */
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background: #fff;
+}
+
+/* Container dos slides */
+.slides-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Cada slide */
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+}
+
+.slide img {
+  width: 400px;
+  height: 796px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.slide-info {
+  margin-top: 10px;
+}
+
+.descricao {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+/* Botões de navegação fixos e modernos */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10; /* sobre os slides */
+  transition: background 0.3s, transform 0.2s;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.9);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* Responsividade */
+@media (max-width: 420px) {
+  .slider {
+    width: 90%;
+    height: auto;
+  }
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -56,3 +56,28 @@
       }
     });
   });
+
+  const slidesContainer = document.querySelector('.slides-container');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let currentIndex = 0;
+
+function showSlide(index) {
+  if (index < 0) index = slides.length - 1;
+  if (index >= slides.length) index = 0;
+  slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+  currentIndex = index;
+}
+
+prevBtn.addEventListener('click', () => {
+  showSlide(currentIndex - 1);
+});
+
+nextBtn.addEventListener('click', () => {
+  showSlide(currentIndex + 1);
+});
+
+// Inicializa
+showSlide(currentIndex);
