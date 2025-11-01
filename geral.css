@@ -45,3 +45,23 @@ body {
   --cor-btn-degrade1: #FC8A59;
   --cor-btn-degrede2: #FDDE59;
 }
+
+/*CITE*/
+
+.cite h3 {
+  font-family: "Ubuntu", sans-serif;
+   font-size: 1.5em;
+   color: var(--cor-btn-principal);
+   padding: 60px;
+   text-align: center;
+}
+
+/*FOOTER*/
+
+.footer {
+  background-color: var(--cor-btn-principal);
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  padding: 30px;
+}

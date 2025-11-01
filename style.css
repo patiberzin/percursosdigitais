@@ -213,26 +213,6 @@
   margin: 8px 50px 24px 50px;
 }
 
-/*CITE*/
-
-.cite h3 {
-  font-family: "Ubuntu", sans-serif;
-   font-size: 1.5em;
-   color: var(--cor-btn-principal);
-   padding: 60px;
-   text-align: center;
-}
-
-/*FOOTER*/
-
-.footer {
-  background-color: var(--cor-btn-principal);
-  color: #fff;
-  font-weight: 400;
-  text-align: center;
-  padding: 30px;
-}
-
 /*RESPONSIVO*/
   
   @media (max-width: 1040px) {
