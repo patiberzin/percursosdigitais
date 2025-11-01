@@ -177,14 +177,16 @@ body {
   margin: 60px auto;
 }
 
-.subtitulo-paragrafo h2 {
+.fonte-preta-h2 {
   font-family: "Ubuntu", sans-serif;
    font-size: 2em;
-  color: var(--cor-btn-principal);
+  color: #000;
 }
 
-.subtitulo-paragrafo p {
+.fonte-preta-p {
   margin: 20px 50px;
+  color: #000;
+  font-weight: 400;
 }
 
 .container-produtos {
