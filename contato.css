@@ -1,0 +1,123 @@
+.container-sobre {
+  max-width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 60px auto;
+}
+
+.container-sobre img {
+  margin-right: 40px;
+}
+
+.p-sobre h3,
+.container-contato h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2em;
+  color: var(--cor-btn-principal);
+  margin-bottom: 16px;
+}
+
+.p-sobre p {
+ margin-bottom: 8px;
+}
+
+/*Formulario*/
+
+.container-contato h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--white); /* Fundo branco para o formulário */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--dark-blue);
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: var(--text-dark);
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="tel"]:focus {
+    outline: none;
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.2); /* Sombra suave no focus */
+}
+
+.contact-form .btn {
+    width: 100%; /* Botão ocupa a largura total do formulário */
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+/*Responsivo*/
+
+     @media (max-width: 840px) {
+      .container-sobre {
+         max-width: 600px;
+         margin: 16px 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .container-sobre img {
+        width: 120px;
+        height: 120px;
+      }
+       .p-sobre h3,
+      .container-contato h3 {
+        font-size: 1.5em;
+        margin: 16px 40px;
+      }
+      .p-sobre p {
+        font-size: 0.8em;
+      }
+
+     }
+
+   @media (max-width: 789px) {
+     .container-sobre {
+        max-width: 600px;
+        margin: 16px 20px;
+        display: flex;
+        flex-direction: column;
+      }
+      .container-sobre img {
+        width: 120px;
+        height: 120px;
+      }
+      .p-sobre h3,
+      .container-contato h3 {
+        font-size: 1.5em;
+        margin: 16px 40px;
+      }
+      .p-sobre p {
+        font-size: 0.8em;
+      }
+   }

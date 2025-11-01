@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre e Contato</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+ <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="geral.css">
+  <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+
+    <nav class="container-menu" aria-label="Navegação principal">
+  <img src="./img/marca.png" alt="marca" width="178" height="72">
+
+  <ul class="menu" role="menubar">
+    <li role="none"><a role="menuitem" href="index.html">Home</a></li>
+
+    <!-- dropdown -->
+    <li class="dropdown" role="none">
+      <!-- usamos <button> para ser acessível e permitir toggle por click/teclado -->
+      <button class="dropbtn" aria-expanded="false" aria-controls="submenu-portfolio">
+        Portfólio ▾
+      </button>
+
+      <ul id="submenu-portfolio" class="submenu" role="menu" aria-hidden="true">
+        <li role="none"><a role="menuitem" href="#landing-pages">Landing Pages</a></li>
+        <li role="none"><a role="menuitem" href="#cartoes">Cartões de Visita</a></li>
+        <li role="none"><a role="menuitem" href="#conteudo">Conteúdos Estratégicos</a></li>
+        <li role="none"><a role="menuitem" href="#case">Case de Sucesso</a></li>
+      </ul>
+    </li>
+
+    <li role="none"><a role="menuitem" href="contato.html">Contato</a></li>
+  </ul>
+</nav>
+
+  <section class="container-sobre">
+    <div>
+      <img src="./img/foto.png" alt="foto" width="400" height="400">
+    </div>
+    <div class="p-sobre">
+      <h3>Não é história de pescador: quem cria</h3>
+      <p>
+        Olá! Sou a Patrícia Berzin, jornalista, pós-graduada em Copywriting e Escritas Criativas.
+      </p>
+     
+      <p>
+         Em 2020, minha curiosidade me levou para o universo da tecnologia, e desde então me especializei como UX/UI Designer (Google) e Web Designer com código.
+      </p>
+ 
+      <p>
+         Unindo escrita estratégica, design e experiência do usuário, crio percursos digitais que te fazem pescar mais clientes.
+      </p>
+
+      <p><b>Precisa de ajuda?</b> Mande-me uma mensagem no formulário abaixo.</p>
+
+    </div>
+  </section>
+
+  <section class="container-contato">
+    <h3>Contato</h3>
+
+                <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">WhatsApp:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="procedure">Adiante o assunto:</label>
+                        <input type="text" id="procedure" name="procedure" placeholder="Ex: Preciso do serviço tal, pelo motivo tal">
+                    </div>
+                    <button type="submit" class="btn primary-btn">Quero o meu Percurso Digital</button>
+                </form>
+            </div>
+        </div>
+  </section>
+</body>
+</html>
