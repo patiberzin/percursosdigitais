@@ -165,7 +165,7 @@ body {
 /*SERVIÇOS*/
 
 .container-servicos {
-  background: linear-gradient(to bottom, #00aaff, #001f3f);
+  background: linear-gradient(to bottom, #EBF8F8, #00aaff, #001f3f);
   padding: 120px 0;
   color: #fff;
 }
@@ -177,16 +177,16 @@ body {
   margin: 60px auto;
 }
 
-.fonte-preta-h2 {
+.subtitulo-paragrafo h2 {
   font-family: "Ubuntu", sans-serif;
    font-size: 2em;
-  color: #000;
+  color: var(--cor-btn-principal);
 }
 
-.fonte-preta-p {
+.subtitulo-paragrafo p {
   margin: 20px 50px;
-  color: #000;
   font-weight: 400;
+  color: #000;
 }
 
 .container-produtos {
@@ -204,7 +204,7 @@ body {
 .produto h3 {
    font-family: "Inter", sans-serif;
    font-size: 1.2em;
-   color: #fff;
+   color: var(--cor-btn-principal);
   font-weight: bold;
   margin: 16px auto;
 }
