@@ -63,34 +63,35 @@
     </div>
   </section>
 
-  <section class="container-contato">
-    <h3>Contato</h3>
+ <section class="container-contato">
+  <h3>Contato</h3>
+  <div class="contact-form">
+    <form action="https://formspree.io/f/mdkprzqr" method="POST">
+      <div class="form-group">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+      </div>
 
-                <div class="contact-form">
-                <form action="https://formspree.io/f/mdkprzqr"
-      method="POST">
-                    <div class="form-group">
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" placeholder="Seu nome completo">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">WhatsApp:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
-                    </div>
-                    <div class="form-group">
-                        <label for="procedure">Adiante o assunto:</label>
-                        <input type="text" id="procedure" name="procedure" placeholder="Ex: Preciso do serviço tal, porque...">
-                    </div>
+      <div class="form-group">
+        <label for="phone">WhatsApp:</label>
+        <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
+      </div>
 
-                          <!-- Campo oculto para redirecionamento ou resposta -->
+      <div class="form-group">
+        <label for="procedure">Adiante o assunto:</label>
+        <input type="text" id="procedure" name="procedure" placeholder="Ex: Preciso do serviço tal, porque...">
+      </div>
+
       <input type="hidden" name="_subject" value="Novo contato via site">
       <input type="hidden" name="_captcha" value="false">
 
-                    <button type="submit" class="btn primary-btn">Quero atrair e pescar mais clientes</button>
-                </form>
-            </div>
-        </div>
-  </section>
+      <button type="submit" class="btn primary-btn">
+        Quero atrair e pescar mais clientes
+      </button>
+    </form>
+  </div>
+</section>
+
 
   <cite class="cite">
     <h3>Construindo percursos que convertem.</h3>
