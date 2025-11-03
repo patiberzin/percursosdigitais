@@ -1,0 +1,32 @@
+.descricao-case {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 60px auto 20px auto;
+}
+
+.descricao-case h2 {
+   font-family: "Ubuntu", sans-serif;
+   font-size: 2em;
+   color: var(--cor-btn-principal);
+   margin-bottom: 16px;
+}
+
+.descricao-case h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5em;
+  color: var(--cor-titulo);
+  margin-bottom: 20px;
+}
+
+.descricao-case p {
+  margin-bottom: 16px;
+}
+
+.container-links {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
