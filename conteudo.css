@@ -5,3 +5,38 @@
   align-items: center;
   margin: 0 auto;
 }
+
+.container-descricao h4 {
+  position: relative;
+  background-color: var(--cor-destaque-numeros);
+  padding: 10px 30px;
+  text-align: center;
+  margin: 16px auto;
+  display: inline-block;
+  color: #000;
+}
+
+.container-descricao h4::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--cor-destaque-numeros);
+}
+
+
+
+@media (max-width: 768px) {
+  .container-descricao h4 {
+    margin-left: 40px;
+  }
+  .list,
+  .lista {
+    margin-left: 40px;
+  }
+}

@@ -52,4 +52,14 @@
   .galeria-container {
     grid-template-columns: 1fr;
   }
+  .container-descricao h2 {
+    margin-bottom: 16px;
+  }
+  .container-descricao h3 {
+    display: flex;
+    margin: 0 40px;
+  }
+  .link {
+    margin: 0 40px;
+  }
 }
