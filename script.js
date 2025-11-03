@@ -81,3 +81,38 @@ nextBtn.addEventListener('click', () => {
 
 // Inicializa
 showSlide(currentIndex);
+
+//FORMULÁRIO
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
+  const message = document.getElementById('formMessage');
+  const originField = document.getElementById('formOrigin');
+
+  // Captura a origem automaticamente (UTM ou URL)
+  const params = new URLSearchParams(window.location.search);
+  const utmSource = params.get('utm_source') || 'acesso direto';
+  originField.value = utmSource;
+
+  // Envio AJAX para não recarregar a página
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      form.style.display = 'none';
+      message.style.display = 'block';
+    } else {
+      message.style.display = 'block';
+      message.textContent = '⚠️ Ocorreu um erro ao enviar. Tente novamente mais tarde.';
+      message.style.color = 'red';
+    }
+  });
+});

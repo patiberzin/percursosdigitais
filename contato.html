@@ -63,25 +63,52 @@
     </div>
   </section>
 
- <section class="container-contato">
+<section class="container-contato">
   <h3>Contato</h3>
+
   <div class="contact-form">
-    <form action="https://formspree.io/f/mdkprzqr" method="POST">
+    <form
+      id="contactForm"
+      action="https://formspree.io/f/SEU_ENDPOINT_AQUI"
+      method="POST"
+    >
       <div class="form-group">
         <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Seu nome completo"
+          required
+        >
       </div>
 
       <div class="form-group">
         <label for="phone">WhatsApp:</label>
-        <input type="tel" id="phone" name="phone" placeholder="(XX) XXXXX-XXXX">
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="(XX) XXXXX-XXXX"
+          required
+        >
       </div>
 
       <div class="form-group">
         <label for="procedure">Adiante o assunto:</label>
-        <input type="text" id="procedure" name="procedure" placeholder="Ex: Preciso do serviço tal, porque...">
+        <input
+          type="text"
+          id="procedure"
+          name="procedure"
+          placeholder="Ex: Preciso do serviço tal, porque..."
+          required
+        >
       </div>
 
+      <!-- 🕵️ Campo oculto de origem -->
+      <input type="hidden" id="formOrigin" name="origin" value="">
+
+      <!-- Campos extras opcionais -->
       <input type="hidden" name="_subject" value="Novo contato via site">
       <input type="hidden" name="_captcha" value="false">
 
@@ -89,6 +116,11 @@
         Quero atrair e pescar mais clientes
       </button>
     </form>
+
+    <!-- 💬 Mensagem de confirmação -->
+    <div id="formMessage" style="display:none; margin-top:20px; text-align:center; color:var(--primary-blue); font-weight:500;">
+      ✅ Sua mensagem foi enviada com sucesso! Em breve entraremos em contato pelo WhatsApp.
+    </div>
   </div>
 </section>
 
