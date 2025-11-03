@@ -67,7 +67,8 @@
     <h3>Contato</h3>
 
                 <div class="contact-form">
-                <form>
+                <form action="https://formspree.io/f/mdkprzqr"
+      method="POST">
                     <div class="form-group">
                         <label for="name">Nome:</label>
                         <input type="text" id="name" name="name" placeholder="Seu nome completo">
@@ -80,6 +81,11 @@
                         <label for="procedure">Adiante o assunto:</label>
                         <input type="text" id="procedure" name="procedure" placeholder="Ex: Preciso do serviço tal, porque...">
                     </div>
+
+                          <!-- Campo oculto para redirecionamento ou resposta -->
+      <input type="hidden" name="_subject" value="Novo contato via site">
+      <input type="hidden" name="_captcha" value="false">
+
                     <button type="submit" class="btn primary-btn">Quero atrair e pescar mais clientes</button>
                 </form>
             </div>
